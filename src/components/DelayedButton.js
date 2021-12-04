@@ -1,6 +1,7 @@
 import React from "react";
 class DelayedButton extends React.Component {
   handleClick = (event) => {
+    console.log("click")
     event.persist();
     setTimeout(() => {
       this.props.onDelayedClick(event);
